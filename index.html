@@ -1,15 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meninas Malvadas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-                         <strong> A importancia da reciclagem </strong>
+    <header>
+        <h1>Meninas Malvadas</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-Ela é uma das maneiras mais eficazes de proteger nossa biodiversidade e prezar pelos recursos naturais. Além disso, elas contribuem para a redução de desastres ambientais, como enchentes, contaminação de rios, mares e solos e reduzem a poluição tal maléfica para os seres vivos.
-A reciclagem ajuda a diminuir gastos nas gestões pública e privada. As prefeituras economizam com limpeza urbana, na construção de aterros sanitários e no tratamento de doenças. Já as indústrias economizam energia elétrica necessária para fazer novos produtos a partir de matéria-prima bruta. 
+    <section id="sobre">
+        <h2>Sobre o Filme</h2>
+        <p>Meninas Malvadas é uma comédia adolescente que explora o mundo das panelinhas e rivalidades no ensino médio.</p>
+    </section>
+
+    <section id="personagens">
+        <h2>Personagens Principais</h2>
+        <div class="card" onclick="showDetails('regina')">
+            <h3>Regina George</h3>
+            <p>A líder do grupo das "Plastics".</p>
+        </div>
+        <div class="card" onclick="showDetails('cady')">
+            <h3>Cady Heron</h3>
+            <p>A nova aluna que se mistura com as "Plastics".</p>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <img src="regina.jpg" alt="Regina George">
+        <img src="cady.jpg" alt="Cady Heron">
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="mailto:contato@exemplo.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meninas Malvadas Fan Site</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
