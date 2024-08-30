@@ -1,48 +1,46 @@
+:root {
+    --rosa-choc: #ff00ff;
+    --rosa-bebe: #ffc0cb;
+    --rosa-pink: #ff69b4;
+    --rosa-claro: #ffe4e1;
+    --rosa-escuro: #c71585;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8d7da;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: pink;
-    color: white;
-    padding: 10px 20px;
+    background-color: var(--rosa-bebe);
+    color: var(--rosa-escuro);
+    font-family: 'Helvetica', sans-serif;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+h1, h2, h3 {
+    color: var(--rosa-choc);
+    text-transform: uppercase;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+p {
+    color: var(--rosa-pink);
 }
 
-nav ul li a {
-    color: white;
+a {
+    color: var(--rosa-claro);
     text-decoration: none;
-    font-weight: bold;
 }
 
-section {
-    margin: 20px;
+a:hover {
+    color: var(--rosa-escuro);
 }
 
-h2 {
-    color: #c2185b;
-}
-
-footer {
-    background-color: #c2185b;
+button {
+    background-color: var(--rosa-pink);
     color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--rosa-choc);
 }
