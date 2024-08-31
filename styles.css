@@ -16,7 +16,6 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para o cabeçalho */
 }
 
 nav ul {
@@ -33,42 +32,33 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra de texto para um efeito envelhecido */
 }
 
 section {
     padding: 4rem 2rem;
-    border-bottom: 3px dashed #e91e63; /* Detalhe em rosa escuro com efeito de linha pontilhada */
-    background: rgba(255, 182, 193, 0.3); /* Rosa claro com transparência para um fundo envelhecido */
-    border-radius: 10px;
-    margin: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para criar um efeito de profundidade */
+    border-bottom: 3px dashed #f48fb1; /* Detalhe em rosa choque com efeito de linha pontilhada */
 }
 
 h1, h2 {
     font-family: 'Cursive', sans-serif; /* Fonte manuscrita para um toque personalizado */
-    color: #e91e63; /* Rosa escuro para os títulos */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra de texto para um efeito envelhecido */
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border: 5px solid #e91e63; /* Bordas em rosa escuro para destacar as imagens */
+    border: 3px solid #e91e63; /* Bordas em rosa escuro para destacar as imagens */
     border-radius: 10px; /* Cantos arredondados para um visual mais moderno */
     margin: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra suave nas imagens */
 }
 
 footer {
-    background-color: #f48fb1; /* Rosa choque para o rodapé */
+    background-color: #f48fb1;
     color: white;
     text-align: center;
     padding: 1rem;
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para o rodapé */
 }
 
 @media (max-width: 768px) {
