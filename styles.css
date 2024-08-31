@@ -1,69 +1,88 @@
+/* Define a paleta de cores com tons de rosa */
+:root {
+    --rosa-choque: #ff69b4;
+    --rosa-bebe: #ffc0cb;
+    --rosa-pink: #ff1493;
+    --preto: #000;
+    --branco: #fff;
+}
+
+/* Estilo geral do corpo do site */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fce4ec; /* Rosa claro para o fundo */
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: var(--rosa-bebe);
+    color: var(--preto);
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #f48fb1; /* Rosa choque para o cabeçalho */
-    color: white;
-    padding: 1rem;
+/* Cabeçalho com detalhes do Burn Book */
+.header {
+    background: var(--rosa-pink);
+    color: var(--branco);
+    padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #e91e63; /* Rosa mais escuro para uma borda elegante */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    position: relative;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.header::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url('caminho-para-imagem-burn-book.png'); /* Adicione uma imagem com detalhes do Burn Book */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
+/* Bordas e detalhes */
+.container {
+    border: 2px solid var(--rosa-choque);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--branco);
 }
 
-nav ul li a {
-    color: white;
+.button {
+    background-color: var(--rosa-pink);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--rosa-choque);
+}
+
+/* Adiciona detalhes interativos */
+a {
+    color: var(--rosa-pink);
     text-decoration: none;
-    font-weight: bold;
 }
 
-section {
-    padding: 4rem 2rem;
-    border-bottom: 3px dashed #f48fb1; /* Detalhe em rosa choque com efeito de linha pontilhada */
+a:hover {
+    text-decoration: underline;
 }
 
-h1, h2 {
-    font-family: 'Cursive', sans-serif; /* Fonte manuscrita para um toque personalizado */
+/* Efeitos adicionais */
+.card {
+    border: 1px solid var(--rosa-choque);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--branco);
+    transition: transform 0.3s;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border: 3px solid #e91e63; /* Bordas em rosa escuro para destacar as imagens */
-    border-radius: 10px; /* Cantos arredondados para um visual mais moderno */
-    margin: 1rem 0;
+.card:hover {
+    transform: scale(1.05);
 }
 
-footer {
-    background-color: #f48fb1;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
-}
