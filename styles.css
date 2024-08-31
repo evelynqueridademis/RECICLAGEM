@@ -1,43 +1,51 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burn Book Inspired Site</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Burn Book Inspired Site</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <h2>Bem-vindo ao Site!</h2>
-        <p>Explore nosso conteúdo inspirado no Burn Book.</p>
-    </section>
-    <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Descubra mais sobre o conceito e o estilo do Burn Book.</p>
-    </section>
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <!-- Adicione imagens e detalhes aqui -->
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Burn Book Inspired Site</p>
-    </footer>
-</body>
-</html>
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fce4ec; /* Rosa claro para o fundo */
+}
+
+header {
+    background-color: #f48fb1; /* Rosa choque para o cabeçalho */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 2px solid #f48fb1; /* Detalhe em rosa choque */
+}
+
+h1, h2 {
+    font-family: 'Cursive', sans-serif; /* Fonte manuscrita para títulos */
+}
+
+footer {
+    background-color: #f48fb1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adicionar mais estilos e detalhes personalizados */
   
 
