@@ -1,87 +1,43 @@
-/* Define a paleta de cores com tons de rosa */
-:root {
-    --rosa-choque: #ff69b4;
-    --rosa-bebe: #ffc0cb;
-    --rosa-pink: #ff1493;
-    --preto: #000;
-    --branco: #fff;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burn Book Inspired Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Burn Book Inspired Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Bem-vindo ao Site!</h2>
+        <p>Explore nosso conteúdo inspirado no Burn Book.</p>
+    </section>
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Descubra mais sobre o conceito e o estilo do Burn Book.</p>
+    </section>
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <!-- Adicione imagens e detalhes aqui -->
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Burn Book Inspired Site</p>
+    </footer>
+</body>
+</html>
+  
 
-/* Estilo geral do corpo do site */
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--rosa-bebe);
-    color: var(--preto);
-    margin: 0;
-    padding: 0;
-}
-
-/* Cabeçalho com detalhes do Burn Book */
-.header {
-    background: var(--rosa-pink);
-    color: var(--branco);
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
-.header::before {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-image: url('caminho-para-imagem-burn-book.png'); /* Adicione uma imagem com detalhes do Burn Book */
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border-radius: 50%;
-}
-
-/* Bordas e detalhes */
-.container {
-    border: 2px solid var(--rosa-choque);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    background-color: var(--branco);
-}
-
-.button {
-    background-color: var(--rosa-pink);
-    color: var(--branco);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
-    background-color: var(--rosa-choque);
-}
-
-/* Adiciona detalhes interativos */
-a {
-    color: var(--rosa-pink);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Efeitos adicionais */
-.card {
-    border: 1px solid var(--rosa-choque);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    background-color: var(--branco);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
