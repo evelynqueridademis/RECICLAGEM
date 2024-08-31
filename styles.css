@@ -1,88 +1,69 @@
-/* Define a paleta de cores com tons de rosa */
-:root {
-    --rosa-choque: #ff69b4;
-    --rosa-bebe: #ffc0cb;
-    --rosa-pink: #ff1493;
-    --preto: #000;
-    --branco: #fff;
-}
-
-/* Estilo geral do corpo do site */
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--rosa-bebe);
-    color: var(--preto);
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #004d40; /* Verde escuro */
     margin: 0;
     padding: 0;
 }
 
-/* Cabeçalho com detalhes do Burn Book */
-.header {
-    background: var(--rosa-pink);
-    color: var(--branco);
-    padding: 20px;
+header {
+    background-color: #00796b; /* Verde esmeralda */
+    color: white;
+    padding: 1rem;
     text-align: center;
-    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para o cabeçalho */
 }
 
-.header::before {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-image: url('caminho-para-imagem-burn-book.png'); /* Adicione uma imagem com detalhes do Burn Book */
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border-radius: 50%;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Bordas e detalhes */
-.container {
-    border: 2px solid var(--rosa-choque);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    background-color: var(--branco);
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
 }
 
-.button {
-    background-color: var(--rosa-pink);
-    color: var(--branco);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
-    background-color: var(--rosa-choque);
-}
-
-/* Adiciona detalhes interativos */
-a {
-    color: var(--rosa-pink);
+nav ul li a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra de texto */
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Efeitos adicionais */
-.card {
-    border: 1px solid var(--rosa-choque);
+section {
+    padding: 4rem 2rem;
+    border-bottom: 2px solid #00796b; /* Verde esmeralda */
+    background: rgba(255, 255, 255, 0.9); /* Branco com leve transparência */
     border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    background-color: var(--branco);
-    transition: transform 0.3s;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para criar profundidade */
 }
 
-.card:hover {
-    transform: scale(1.05);
+h1, h2 {
+    color: #004d40; /* Verde escuro */
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #004d40; /* Verde escuro */
+    border-radius: 10px; /* Cantos arredondados */
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra suave nas imagens */
+}
+
+footer {
+    background-color: #00796b; /* Verde esmeralda */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para o rodapé */
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
